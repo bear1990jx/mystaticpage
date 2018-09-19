@@ -1,0 +1,74 @@
+/*==========reset css==============*/
+*,
+*::before,
+*::after{
+    /*所有的标签和为元素*/
+    margin:0;
+    padding: 0;
+    /*移动端常用布局是非固定像素（保证适配）*/
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+.body{
+    font-size: 14px;
+    font-family: monospace, "Microsoft YaHei", sans-serif;
+    color: black;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+input,textarea{
+    border:none;
+    outline: none;
+    resize:none;
+    -webkit-appearance: none;
+}
+
+/*==========commen css==============*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.m_l10{
+    margin-left: 10px;
+}
+.m_r10{
+    margin-right: 10px;
+}
+.m_t10{
+    margin-top: 10px;
+}
+.m_b10{
+    margin-bottom: 10px;
+}
+/*sprite的公共样式*/
+/*sprite图的宽高设置为原图的一半大小*/
+[class^="icon_"],[class*=" icon_"]{
+    background: url("../images/sprites.png") no-repeat;
+    background-size:200px 200px;
+}
+
+
+
+
+
+
+
+
