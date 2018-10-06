@@ -1,0 +1,501 @@
+/*==========reset css==============*/
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	font-size: 14px;
+	font-family: monospace, "Microsoft YaHei", sans-serif;
+	color:black;
+}
+ul{
+	list-style: none;
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+/*==========model css==============*/
+body{
+	background: #f9f8f2;
+}
+/*1-导航*/
+.screen01{
+	background: url("../images/coffee_bg.png") no-repeat center/cover;
+	width: 100%;
+	height: 800px;
+}
+.content_01_box{
+	height: 40px;
+	width: 100%;
+	margin:0 auto;
+	position: relative;
+}
+.content_01_box a{
+	color: white;
+}
+.content_01_box .logo{
+	position: absolute;
+	font-size: 2rem;
+	left: 2%;
+	top: 20px;
+	font-family: "Arial Black";
+}
+.content_01_box .text{
+	position:absolute;
+	right: 2%;
+	top: 40px;
+	font-size: 1rem;
+	text-align: center;
+}
+.content_02_box{
+	height: 300px;
+	width: 100%;
+	margin:0 auto;
+	position: relative;
+}
+.content_02_box a{
+	color: white;
+}
+.content_02_box .fashion{
+	position: absolute;
+	left:2%;
+	top: 100px;
+	font-size: 5.7rem;
+	font-family: "Arial Black";
+}
+.content_02_box .list{
+	position:absolute;
+	right: 2%;
+	top:100px;
+	text-align: right;
+	font-size: 2rem;
+	font-family: "Arial Black";
+}
+.wrapper_box a:hover{
+	color: #dad0c4;
+}
+
+.mouse{
+	position: absolute;
+	width: 26px;
+	height: 46px;
+	border: 2px solid white;
+	border-radius:20px;
+	left:50%;
+	margin-left: -13px;
+	bottom: 10%;
+}
+.mouse .dot{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: white;
+	border-radius: 50%;
+	margin-left: 8px;
+	margin-top: 10px;
+	animation: dot01 1s ease infinite alternate ;
+}
+
+@keyframes dot01 {
+	from{}
+	to{
+		/*上下移动*/
+		transform: translateY(20px)
+	}
+}
+
+/*2-第二屏幕*/
+.screen02{
+	width: 100%;
+	margin-top:300px;
+}
+.con_02{
+	width: 100%;
+	position: relative;
+}
+
+.con_02 .title_content{
+	width: 30%;
+	padding-left:8%;
+}
+.screen02_title{
+	display: inline-block;
+	font-size: 2rem;
+	font-family: "Arial Black";
+	position: relative;
+	text-decoration: none;
+	color: #000;
+}
+.screen02_title::after{
+	content:'';
+	display:block;
+	/*开始时候下划线的宽度为0*/
+	width:0;
+	height:3px;
+	position:absolute;
+	left:0;
+	bottom:-4px;
+	background:#000;
+	/*这里我们设定所有改变都有动画效果，可以自己指定样式才有动画效果*/
+	transition:all 0.3s ease-in-out;
+}
+.screen02_title:hover::after{
+	width:100%;
+}
+.con_02 .pic{
+	width: 40%;
+}
+.con_02 .pic img{
+	display: block;
+	width: 100%;
+}
+.con_02 .text{
+	width: 30%;
+	font-size: 1.2rem;
+	font-family: "Arial Black";
+	padding-left: 4%;
+	padding-right: 6%;
+
+
+}
+
+/*2-第二屏幕-动画*/
+.screen02.now {
+	animation: screen02 1s ease forwards;
+}
+
+@keyframes screen02 {
+	from{}
+	to{
+		/*上下移动*/
+		transform: translateY(-150px)
+	}
+}
+
+/*第三屏幕*/
+.screen03{
+	width: 100%;
+	margin-top:100px;
+}
+.con_03{
+	width: 100%;
+	position: relative;
+}
+
+.con_03 .pic_01{
+	width: 60%;
+}
+.con_03 .pic_01 img{
+	display: block;
+	width: 90%;
+}
+.con_03 .pic_02{
+	width: 30%;
+}
+.con_03 .pic_02 img{
+	display: block;
+	width: 90%;
+	padding-top:120px;
+}
+
+.con_03 .title_content{
+	width: 30%;
+	padding-left:8%;
+}
+.screen02_title{
+	display: inline-block;
+	font-size: 2rem;
+	font-family: "Arial Black";
+	position: relative;
+	text-decoration: none;
+	color: #000;
+}
+.screen02_title::after{
+	content:'';
+	display:block;
+	/*开始时候下划线的宽度为0*/
+	width:0;
+	height:3px;
+	position:absolute;
+	left:0;
+	bottom:-4px;
+	background:#000;
+	/*这里我们设定所有改变都有动画效果，可以自己指定样式才有动画效果*/
+	transition:all 0.3s ease-in-out;
+}
+.screen02_title:hover::after{
+	width:100%;
+}
+
+
+
+/*3-第三屏幕-动画*/
+.screen03.now {
+	animation: screen02 1s ease forwards;
+}
+
+/*4-第四屏幕*/
+.screen04{
+	width: 100%;
+	margin-top:250px;
+}
+.con_04{
+	width: 100%;
+	position: relative;
+}
+.con_04 .text{
+	width: 30%;
+	font-size: 1.2rem;
+	font-family: "Arial Black";
+	padding-top: 60px;
+	padding-left: 8%;
+}
+.con_04 .pic{
+	width: 50%;
+	padding-left: 10%;
+}
+.con_04 .pic img{
+	display: block;
+	width: 100%;
+
+
+}
+.con_04 .title_content{
+	padding-left: 2%;
+	width: 20%;
+}
+
+/*4-第四屏幕-动画*/
+.screen04.now {
+	animation: screen02 1s ease forwards;
+}
+
+/*5-第五屏幕*/
+.screen05{
+	width: 100%;
+	margin-top: 100px;
+}
+.con_05{
+	width: 100%;
+	position: relative;
+}
+.con_05 .pic{
+	width: 70%;
+}
+.con_05 .pic a img{
+	width: 100%;
+	display: block;
+}
+.con_05 .title_content{
+	width: 30%;
+	padding-right: 10%;
+}
+.con_05 .text{
+	padding-top: 30px;
+	padding-right: 10%;
+	width: 30%;
+	font-size: 1.2rem;
+	font-family: "Arial Black";
+
+}
+/*4-第四屏幕-动画*/
+.screen05.now {
+	animation: screen02 1s ease forwards;
+}
+
+.screen06{
+	margin-top: 200px;
+}
+.wrap_box{
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
+.wrap_box .wrap_01{
+	width: 33.33333%;
+}
+.wrap_box .wrap_01 img{
+	width: 90%;
+	display: block;
+}
+.wrap_box .wrap_01 span{
+	font-size: 20px;
+	font-family: "Arial Black";
+	padding-top: 10px;
+}
+.wrap_box .wrap_01 p{
+	font-size: 14px;
+	padding-top: 10px;
+	width: 90%;
+}
+.wrap_box .wrap_02{
+	width: 33.33333%;
+}
+.wrap_box .wrap_02 img{
+	width: 90%;
+	display: block;
+}
+.wrap_box .wrap_02 span{
+	font-size: 20px;
+	font-family: "Arial Black";
+	padding-top: 10px;
+}
+.wrap_box .wrap_02 p{
+	font-size: 14px;
+	padding-top: 10px;
+	width: 90%;
+}
+.wrap_box .wrap_03{
+	width: 33.33333%;;
+}
+.wrap_box .wrap_03 img{
+	width: 90%;
+	display: block;
+}
+.wrap_box .wrap_03 span{
+	font-size: 20px;
+	font-family: "Arial Black";
+}
+.wrap_box .wrap_03 p{
+	font-size: 14px;
+	padding-top: 10px;
+	width: 90%;
+}
+
+/*4-第六屏幕-动画*/
+.screen06.now .title_content{
+	animation: screen02 1s ease forwards;
+}
+.screen06.now .wrap_01{
+	animation: screen02 2s ease forwards;
+}
+.screen06.now .wrap_02{
+	animation: screen02 2.5s ease forwards;
+}
+.screen06.now .wrap_03{
+	animation: screen02 1.5s ease forwards;
+}
+
+/*footer*/
+
+.footer{
+	width: 100%;
+	height: 700px;
+}
+.footer .content_box{
+	width: 96%;
+	position: relative;
+	height: 800px;
+	margin: 0 auto;
+	top: 10%;
+	background: #dad0c4;
+}
+.footer .content_box .logo{
+	position: absolute;
+	font-size: 2rem;
+	left: 8%;
+	top: 10%;
+	font-family: "Arial Black";
+}
+.footer .content_box .table_warp{
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 26%;
+	padding-left: 8%;
+}
+.table_warp a{
+	display: inline-block;
+	padding-top: 4%;
+}
+.footer ul li{
+	font-size:1rem;
+}
+.footer .table01{
+	width: 25%;
+	float: left;
+}
+.footer .table02{
+	width: 25%;
+	float: left;
+}
+.footer .table03{
+	width: 25%;
+	float: left;
+}
+.footer .table04{
+	width: 25%;
+	float: left;
+}
+/*邮箱输入框*/
+.footer .content_box .email_warp{
+	width: 100%;
+}
+.email_warp_box{
+	width: 100%;
+	position: absolute;
+	padding-left: 8%;
+	top: 56%;
+}
+.footer p{
+	font-size: 1rem;
+	font-family: "Arial Black";
+}
+.email_warp_box .E-mail{
+	padding-bottom: 2%;
+}
+
+.email_warp_box input{
+	float: left;
+}
+/*邮箱输入框样式-宽*/
+input[type="text"]{
+	-web-kit-appearance:none;
+	-moz-appearance: none;
+	display: block;
+	margin: 0 auto;
+	font-size:1rem;
+	width: 240px;
+}
+input[type="submit"]{
+	-web-kit-appearance:none;
+	-moz-appearance: none;
+	display: block;
+	margin: 0 auto;
+	font-size:1rem;
+	width: 140px;
+}
+/*邮箱输入框样式-高和边框*/
+input[type="text"]{
+	height:38px;
+	border:2px solid #333333;
+	color:#333333;
+	outline:0;
+}
+input[type="submit"]{
+	height: 38px;
+	border:2px solid #333333;
+	/*background: #333333;*/
+	color: #333333;
+	/*font-weight: bold;*/
+	font-size: 16px;
+	margin-left: -2px;
+}
+input[type="submit"]:hover{
+	background: #333333;
+	color: #ffffff;
+	cursor: pointer;}
+
+.footer .copyright{
+	width: 100%;
+}
+.footer .copyright a{
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	margin-left: -225px;
+	bottom:10%;
+}
+
+

@@ -1,0 +1,247 @@
+body{
+    background: white;
+}
+/*版心*/
+.container{
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    /*盒子居中*/
+    margin: 0 auto;
+}
+.search{
+    width: 100%;
+    height: 50px;
+    /*一直处于浮层效果*/
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top:0;
+}
+.search .search_box{
+    height: 50px;
+    background: rgba(0,0,0,0.2);
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.search .search_box .icon_logo {
+    position: absolute;
+    left:10px;
+    top:18px;
+    height: 10px;
+    width:176px;
+    background-position:0 -15px;
+}
+.search .search_box .more{
+    position: absolute;
+    right:10px;
+    top:10px;
+    height: 22px;
+    width:30px;
+    background: url("../images/sprites.png");
+    background-size:200px 200px;
+    background-position:2px -30px;
+}
+/*图片的自适应 用不同的百分比*/
+.banner{
+    width:100%;
+    overflow: hidden;
+    position:relative
+}
+/*轮播图其实就是横向调用 是一个长图*/
+.banner ul:first-child{
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+.banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.banner ul:first-child li a{
+    display: block;
+    width:100%;
+}
+.banner ul:first-child li a img{
+    display: block;
+    width: 100%;
+}
+/*这个lastchild是小点点*/
+.banner ul:last-child{
+    position: absolute;
+    width: 118px;
+    height: 6px;
+    left:50%;
+    margin-left: -59px;
+    bottom: 6px;
+}
+.banner ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: white;
+    opacity: 0.5;
+    margin-left: 10px;
+    float: left;
+}
+.banner ul:last-child li:first-child{
+    margin-left: 0;
+}
+.banner ul:last-child li.now{
+    background: white;
+    opacity: 1;
+}
+/*导航栏*/
+.nav{
+    width: 100%;
+    background: #e8ac38;
+}
+.nav ul{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+}
+.nav ul li a p{
+    font-size: 16px;
+    color: white;
+    font-family: "Arial Black";
+}
+.nav .text{
+    display: block;
+    position: absolute;
+    animation: text01 1s ease forwards;
+
+}
+@keyframes text01 {
+    from{}
+    to{
+        /*上下移动*/
+        transform: translateY(20px)
+    }
+}
+
+/*内容1*/
+.content_01{
+    width: 100%;
+    position: relative;
+}
+.content_01 a img{
+    display: block;
+    width: 100%;
+}
+.content_01 .nav{
+    width: 100%;
+    background: #8c9a32;
+}
+.content_01 .nav ul{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+}
+.content_01 .nav ul li a p{
+    font-size: 16px;
+    color: white;
+    font-family: "Arial Black";
+    text-align: right;
+}
+/*内容2*/
+.content_02{
+    width: 100%;
+    position: relative;
+}
+.content_02 a img{
+    display: block;
+    width: 100%;
+}
+.content_02 .nav{
+    width: 100%;
+    background: #d76660;
+}
+.content_02 .nav ul{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+}
+.content_02 .nav ul li a p{
+    font-size: 16px;
+    color: white;
+    font-family: "Arial Black";
+    text-align: right;
+}
+/*内容3*/
+.content_03{
+    width: 100%;
+    position: relative;
+}
+.content_03 a img{
+    display: block;
+    width: 100%;
+}
+.content_03 .nav{
+    width: 100%;
+    background: #5b6b86;
+}
+.content_03 .nav ul{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 30px;
+}
+.content_03 .nav ul li a p{
+    font-size: 16px;
+    color: white;
+    font-family: "Arial Black";
+    text-align: right;
+}
+/*菜单*/
+.nc_menu{
+    background: #f3ece0;
+}
+.nc_menu .icon{
+    display: block;
+    padding-top: 40px;
+    padding-left: 80%;
+}
+.menu_box {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.menu_box a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    color:#333333;
+    font-family: "Arial Black";
+}
+.menu_box a:hover{
+    border-bottom: 2px solid #ccc6bb;
+}
+.nc_menu .copyright{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 12px;
+    color:#333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
