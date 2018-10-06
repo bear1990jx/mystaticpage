@@ -30,8 +30,3 @@ logs/
 .mtj.tmp/
 
 # Package Files #
-
-# .png files
-
-*.png
-/apigateway.conf
