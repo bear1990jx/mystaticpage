@@ -1,0 +1,93 @@
+<!--h5文档申明-->
+<!DOCTYPE html>
+<html lang="CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Nicole.Milkshake.work</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<!--作品页面 两个版本pc和m-->
+<section class="nm_work">
+    <!--当大屏幕时切换-->
+    <div class="nm_work_box06_pc hidden-xs">
+        <!--信息文字的bootstrap 标签-->
+        <div class="info">
+            <div class="container">
+                <div class="pull-left">
+                    <a href="index.html">
+                        <span class="title">Blau Atelier</span>
+                        <br>
+                        <span class="name">GERMANY</span>
+                    </a>
+                </div>
+                <div class="pull-right"><a class="close" href="work07_info.html"><span class="glyphicon glyphicon-arrow-right"></span></a></div>
+            </div>
+        </div>
+        <!--图片-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="#" class="pc_imgBox" style="background-image: url(images/work_6_01.gif)"></a>
+                </div>
+                <div class="item">
+                    <a href="#" class="pc_imgBox" style="background-image: url(images/work_6_02.png)"></a>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic"  data-slide="prev">
+                <span class="prev glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="next glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--当手机屏幕时切换-->
+    <div class="nm_work_box06_m  hidden-lg hidden-md hidden-sm">
+        <!--手机端（1）名称-->
+        <div class="info">
+            <div class="container">
+                <div class="pull-left">
+                    <span class="title">LeMonde Extérieur </span>
+                    <br>
+                    <span class="name">ICELAND</span>
+                </div>
+                <div class="pull-right"><a class="close" href="index.html"><span class="glyphicon glyphicon-remove"></span></a></div>
+            </div>
+        </div>
+        <!--手机端（2）图片-->
+        <div class="m_imgBox">
+            <img src="images/work_6_01.gif" alt="">
+            <img src="images/work_6_02.png" alt="">
+        </div>
+        <!--手机端（3）左右调转-->
+        <div class="icon">
+            <a class="prev" href="work05_info.html"><span>-prev</span></a>
+            <a class="next" href="work07_info.html"><span>next-</span></a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<!--添加js样式-->
+<script src="js/index.js"></script>
+</body>
+</html>
