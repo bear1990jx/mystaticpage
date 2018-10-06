@@ -95,7 +95,13 @@ a:hover{
     margin-left: 4%;
     float: left;
     position: absolute;
+    display: block;
+    width: 240px;
 }
+.nm_nav_m .logo img{
+    width: 100%;
+}
+
 .nm_nav_m .icon a{
     display: inline-block;
     font-size: 24px;
